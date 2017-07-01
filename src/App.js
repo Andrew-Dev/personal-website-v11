@@ -11,9 +11,7 @@ class App extends Component {
       <div className="App">
         <Background/>
         <div className="content">
-          <div id="title">
             <IntroArea/>
-          </div>
         </div>
         
       </div>
