@@ -1,74 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700')
 
-$bgPrimaryColor: #4A148C
-
-// n is number of stars required
-@function multiple-box-shadow ($n) 
-  $value: '#{random(2000)}px #{random(2000)}px #{inspect($bgPrimaryColor)}'
-  @for $i from 2 through $n
-    $value: '#{$value} , #{random(2000)}px #{random(2000)}px #{inspect($bgPrimaryColor)}'
-
-  @return unquote($value)
-
-$shadows-small:  multiple-box-shadow(100)
-$shadows-medium: multiple-box-shadow(100)
-$shadows-big:    multiple-box-shadow(100)
-
-.App
-  height: 100vh
-  width: 100%
-  background: radial-gradient(ellipse at bottom, $bgPrimaryColor 0%, #090A0F 100%)
-  overflow: hidden
-    
-#stars
-  width: 6px
-  height: 6px
-  border-radius: 4px
-  background: transparent
-  box-shadow: $shadows-small
-  animation			: animStar 50s linear infinite
-    
-  &:after
-    content: " "
-    position: absolute
-    top: 2000px
-    width: 6px
-    height: 6px
-    background: transparent
-    box-shadow: $shadows-small
-    
-#stars2
-  width: 8px
-  height: 8px
-  border-radius: 6px
-  background: transparent
-  box-shadow: $shadows-medium
-  animation			: animStar 100s linear infinite
-    
-  &:after
-    content: " "
-    position: absolute
-    top: 2000px
-    width: 2px
-    height: 2px
-    background: transparent
-    box-shadow: $shadows-medium
-    
-#stars3
-  width: 10px
-  height: 10px
-  border-radius: 8px
-  background: transparent
-  box-shadow: $shadows-big
-  animation			: animStar 150s linear infinite
-    
-  &:after
-    content: " "
-    position: absolute
-    top: 2000px
-    width: 3px
-    height: 3px
-    background: transparent
-    box-shadow: $shadows-big
 
 #title
   position: absolute
@@ -78,10 +9,10 @@ $shadows-big:    multiple-box-shadow(100)
   
   color: #FFF
   text-align: center
-  font-family: 'lato',sans-serif
-  font-weight: 300
+  font-family: 'Roboto Slab', serif
+  font-weight: 400
   font-size: 50px
-  letter-spacing: 10px
+  letter-spacing: 2px
   
   margin-top: -60px
   padding-left: 10px
@@ -90,10 +21,3 @@ $shadows-big:    multiple-box-shadow(100)
     background: -webkit-linear-gradient(#81D4FA, #0288D1)
     -webkit-background-clip: text
     -webkit-text-fill-color: transparent
-    
-@keyframes animStar
-  from	
-    transform: translateY(0px)
-  to		
-    transform: translateY(-2000px)
-    
