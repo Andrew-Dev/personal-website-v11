@@ -6,8 +6,8 @@ class IntroArea extends Component {
         return (
             <div id="intro">
                 <h1>ANDREW ARPASI</h1>
-                <h2>Enthusiastic Developer and</h2>
-                <h2>Computer Science Student</h2>
+                <h2><span id="line1">ENTHUSIASTIC DEVELOPER</span> and</h2>
+                <h2 id="line2">COMPUTER SCIENCE STUDENT</h2>
             </div>
         )
     }

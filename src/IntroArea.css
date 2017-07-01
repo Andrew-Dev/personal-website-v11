@@ -1,6 +1,8 @@
 #intro {
   font-family: 'Roboto Slab', serif;
-  text-align: center; }
+  text-align: center;
+  margin-top: 20%;
+  color: #FFF; }
 
 #intro h1 {
   font-weight: 400;
@@ -11,5 +13,12 @@
   text-shadow: 0px 0px 0 #e5e5e5, 1px 1px 0 #d5d5d5, 2px 2px 0 #c4c4c4, 3px 3px 0 #b4b4b4, 4px 4px 0 #a4a4a4, 5px 5px 4px rgba(0, 0, 0, 0.3), 5px 5px 1px rgba(0, 0, 0, 0.5), 0px 0px 4px rgba(0, 0, 0, 0.2);
   padding-bottom: 1vh; }
 
-h2 {
-  font-size: 2rem; }
+#intro h2 {
+  font-size: 2rem;
+  margin: 0; }
+
+#line1 {
+  color: #26d3ff; }
+
+#line2 {
+  color: #29BAA5; }
