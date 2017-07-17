@@ -1,5 +1,5 @@
 
-$bgPrimaryColor: #4A148C
+$bgPrimaryColor: #461851
 
 // n is number of stars required
 @function multiple-box-shadow ($n) 
@@ -9,14 +9,14 @@ $bgPrimaryColor: #4A148C
 
   @return unquote($value)
 
-$shadows-small:  multiple-box-shadow(100)
-$shadows-medium: multiple-box-shadow(100)
-$shadows-big:    multiple-box-shadow(100)
+$shadows-small:  multiple-box-shadow(60)
+$shadows-medium: multiple-box-shadow(60)
+$shadows-big:    multiple-box-shadow(60)
 
 #background
   height: 100vh
   width: 100%
-  background: radial-gradient(ellipse at bottom, $bgPrimaryColor 0%, #090A0F 100%)
+  background: #190629 //radial-gradient(ellipse at bottom, $bgPrimaryColor 0%, #090A0F 100%)
   position: fixed
   top: 0
   left: 0
@@ -28,7 +28,7 @@ $shadows-big:    multiple-box-shadow(100)
   border-radius: 4px
   background: transparent
   box-shadow: $shadows-small
-  animation			: animStar 30s linear infinite
+  animation			: animStar 120s linear infinite
     
   &:after
     content: " "
@@ -64,7 +64,7 @@ $shadows-big:    multiple-box-shadow(100)
   border-radius: 8px
   background: transparent
   box-shadow: $shadows-big
-  animation			: animStar 120s linear infinite
+  animation			: animStar 30s linear infinite
     
   &:after
     content: " "
