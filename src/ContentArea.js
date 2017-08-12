@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Button from './Button'
 import './ContentArea.css'
 
 class ContentArea extends Component {
@@ -8,6 +9,7 @@ class ContentArea extends Component {
                 <div id="divider"/>
                 <div id="introduction">
                     <h1 id="introLead">intro text</h1>
+                    <Button text="Press me"/>
                 </div>
             </div>
         )
