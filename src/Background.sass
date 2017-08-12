@@ -1,11 +1,13 @@
 
-$bgPrimaryColor: #461851
+$bgPrimaryColor: #6441A5//#5f2c82//#461851
+$bgSecondaryColor: #1d0530
+$starColor: rgba(187, 100, 255,0.25);
 
 // n is number of stars required
 @function multiple-box-shadow ($n) 
-  $value: '#{random(100)}vw #{random(100)}vh #{inspect($bgPrimaryColor)}'
+  $value: '#{random(100)}vw #{random(100)}vh #{inspect($starColor)}'
   @for $i from 2 through $n
-    $value: '#{$value} , #{random(100)}vw #{random(100)}vh #{inspect($bgPrimaryColor)}'
+    $value: '#{$value} , #{random(100)}vw #{random(100)}vh #{inspect($starColor)}'
 
   @return unquote($value)
 
@@ -16,7 +18,7 @@ $shadows-big:    multiple-box-shadow(60)
 #background
   height: 100vh
   width: 100%
-  background: #190629 //radial-gradient(ellipse at bottom, $bgPrimaryColor 0%, #090A0F 100%)
+  background: $bgSecondaryColor//radial-gradient(ellipse at bottom, $bgPrimaryColor 0%, $bgSecondaryColor 100%)
   position: fixed
   top: 0
   left: 0

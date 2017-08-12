@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import IntroArea from './IntroArea'
 import Background from './Background'
+import ContentArea from './ContentArea'
 
 class App extends Component {
 
@@ -12,6 +13,7 @@ class App extends Component {
         <Background/>
         <div className="content">
             <IntroArea/>
+            <ContentArea/>
         </div>
         
       </div>
