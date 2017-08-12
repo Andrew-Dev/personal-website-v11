@@ -7,7 +7,10 @@
   font-size: 1rem;
   height: 64px;
   border-style: solid;
-  border-color: blue;
+  border-color: blue; }
+
+.buttonContainer {
+  margin: 0 10px;
   position: relative; }
 
 .rippleContainer:hover {

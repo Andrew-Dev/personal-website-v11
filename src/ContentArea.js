@@ -10,6 +10,7 @@ class ContentArea extends Component {
                 <div id="introduction">
                     <h1 id="introLead">intro text</h1>
                     <Button text="Press me"/>
+                    <Button text="And me"/>
                 </div>
             </div>
         )

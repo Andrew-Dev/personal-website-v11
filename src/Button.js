@@ -12,11 +12,13 @@ class Button extends Component {
 
   render() {
     return (
-      <Ripple style={this.rippleCSS}>
-        <button className="button" style={this.props.style}>
-          { this.props.text }
-        </button>
-      </Ripple>
+      <span className="buttonContainer">
+        <Ripple style={this.rippleCSS}>
+          <button className="button" style={this.props.style}>
+            { this.props.text }
+          </button>
+        </Ripple>
+      </span>
     );
   }
 }
