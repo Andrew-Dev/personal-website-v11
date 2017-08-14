@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Button from './Button'
+import RoundedButton from './RoundedButton'
 import './ContentArea.css'
 
 class ContentArea extends Component {
@@ -11,6 +12,7 @@ class ContentArea extends Component {
                     <h1 id="introLead">intro text</h1>
                     <Button text="Press me"/>
                     <Button text="And me"/>
+                    <RoundedButton text="Rounded Button"/>
                 </div>
             </div>
         )
