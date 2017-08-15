@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Button from './Button'
-import RoundedButton from './RoundedButton'
 import GradientButton from './GradientButton'
 import './ContentArea.css'
 
@@ -13,8 +12,8 @@ class ContentArea extends Component {
                     <h1 id="introLead">intro text</h1>
                     <Button text="Press me"/>
                     <Button text="And me"/>
-                    <RoundedButton text="Rounded Button"/>
                     <GradientButton text="gradient" gradient='sunset'/>
+                    <GradientButton text="gradient" gradient='mtnDew'/>
                     <GradientButton text="gradient" gradient='gravity'/>
                 </div>
             </div>

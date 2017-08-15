@@ -13,6 +13,9 @@ class Button extends Component {
 
   componentWillMount() {
     this.rippleCSS = Object.assign(this.rippleCSS,this.props.style);
+    if(this.props.extraTopSpacing) {
+      this.rippleCSS['margin-top'] = '60px'
+    }
   }
 
   
