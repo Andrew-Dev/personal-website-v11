@@ -18,13 +18,20 @@ class Button extends Component {
     }
   }
 
-  
+  clickAction = (event) => {
+    setTimeout(() => {
+      if(this.props.clickAction) {
+        this.props.clickAction()
+      }
+    },100)
+    
+  }
 
   render() {
     return (
       <div className="buttonContainer">
         <Ripple style={this.rippleCSS}>
-          <button className="button" style={this.props.style}>
+          <button className="button" style={this.props.style} onClick={this.clickAction}>
             { this.props.text }
           </button>
         </Ripple>
