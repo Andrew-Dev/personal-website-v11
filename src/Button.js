@@ -17,11 +17,14 @@ class Button extends Component {
       this.rippleCSS['margin-top'] = '60px'
     }
   }
-
+  
   clickAction = (event) => {
     setTimeout(() => {
       if(this.props.clickAction) {
         this.props.clickAction()
+      }
+      if(this.props.link) {
+        window.open(this.props.link, '_blank')
       }
     },100)
     

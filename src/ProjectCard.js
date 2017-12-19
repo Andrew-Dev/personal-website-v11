@@ -19,7 +19,10 @@ class ProjectCard extends Component {
                         return <Chip text={str} />
                     })}
                 </div>
-                <GradientButton text="gradient" gradient='gravity'/>
+                <div className="imageContainer">
+                    <img src={this.props.image} className="projectImage" />
+                </div>
+                <GradientButton text={this.props.buttonText} gradient='gravity' link={this.props.link}/>
             </div>
         )
     }
