@@ -21,7 +21,9 @@ class ProjectCard extends Component {
                 </div>
                 <div className="imageContainer">
                     <img src={this.props.image} className="projectImage" />
-                    <GradientButton text={this.props.buttonText} gradient='gravity' link={this.props.link} center={true}/>
+                    <div className="centerButtonContainer">
+                        <GradientButton text={this.props.buttonText} gradient='gravity' link={this.props.link} center={true}/>
+                    </div>
                 </div>
             </div>
         )

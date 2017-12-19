@@ -24,3 +24,8 @@
 .rippleContainer:hover {
   box-shadow: 0 8px 27px 0 rgba(0, 0, 0, 0.2) !important;
   transition-delay: 0s !important; }
+
+.centerButtonContainer {
+  display: block;
+  margin: 0 auto !important;
+  width: fit-content !important; }
