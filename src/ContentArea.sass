@@ -1,24 +1,39 @@
 #contentArea
     margin-top: 99vh
-    background-color: #fff
     z-index: 10
     box-shadow: 0 -10px 10px -10px #000
+    word-wrap: break-word
 
 #divider
     background: linear-gradient(90deg,#0ec1f6,#8823de)
     height: 1vh
     width: 100%
 
-#introLead
+.lead
     font-family: 'Roboto Mono', monospace
     font-weight: 100
-    color: #6441A5
-    font-size: 3em
+    font-size: 4em
     text-align: center
     margin-top: 0px
     padding-top: 20px
 
+.introLead
+    color: #6441A5
+
+#introBody
+    font-family: 'Roboto Slab', serif
+    color: #6441A5
+    font-size: 2em
+    padding: 10vh 40px
+
+@media (max-width: 600px)
+    #introBody
+        font-size: 1.5em
+        padding: 2vh
+        text-align: center
+
+
 #introduction
-    height: 99vh
     background-color: #fff
+    min-height: 99vh
 
