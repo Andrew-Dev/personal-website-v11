@@ -15,7 +15,8 @@
   margin: 20px 10px;
   position: relative;
   height: 84px;
-  display: inline; }
+  display: inline;
+  width: fit-content; }
 
 .rippleContainer {
   margin-top: 10px; }

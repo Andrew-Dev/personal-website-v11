@@ -11,6 +11,22 @@ class GradientButton extends Component {
     'reef':['#00d2ff','#3a7bd5'],
   }
 
+  componentWillMount() {
+    this.style = {
+      'border-radius':'32px',
+      'background':this.assembleGradientString(),
+      'border-width':'0px',
+      'color':'#FFF',
+    }
+    if(this.props.center) {
+      Object.assign(this.style,{
+        'display': 'block',
+        'margin': '0 auto',
+        'width':'fit-content'
+      })
+    }
+  }
+
   assembleGradientString() {
     console.log(this.props)
     const gradient = this.gradients[this.props.gradient]
@@ -18,12 +34,7 @@ class GradientButton extends Component {
     return gradStr
   }
 
-  style = {
-    'border-radius':'32px',
-    'background':this.assembleGradientString(),
-    'border-width':'0px',
-    'color':'#FFF',
-  }
+  
 
   render() {
     return (
