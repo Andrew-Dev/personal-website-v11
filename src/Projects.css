@@ -3,5 +3,9 @@
   min-height: 100vh;
   padding: 2vh; }
 
+@media screen and (min-width: 1600px) {
+  #projects {
+    padding: 2vh 10vw; } }
+
 .projectsLead {
   color: #ffffff; }
