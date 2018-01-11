@@ -21,7 +21,7 @@ class Button extends Component {
   clickAction = (event) => {
     setTimeout(() => {
       if(this.props.clickAction) {
-        this.props.clickAction()
+        this.props.clickAction(event)
       }
       if(this.props.link) {
         window.open(this.props.link, '_blank')

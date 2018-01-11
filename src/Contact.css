@@ -1,4 +1,41 @@
 #contact {
   background: linear-gradient(180deg, #0ec1f6, #8823de);
   min-height: 100vh;
-  padding: 2vh; }
+  padding: 2vh 20vw; }
+
+@media screen and (max-width: 480px) {
+  #contact {
+    padding: 2vh 4vw; } }
+
+#contactContainer {
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 20px 10%;
+  box-shadow: 2px 2px 14px -1px rgba(0, 0, 0, 0.35);
+  width: 80%;
+  height: 100%; }
+
+#contactContainer .formField {
+  padding: 8px 12px;
+  transition: 0.25s;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.25);
+  font-size: 1.5em;
+  width: 100%;
+  box-sizing: border-box;
+  border-style: none;
+  color: #FFF;
+  font-family: 'Roboto Mono', monospace;
+  border-bottom: 2px solid transparent;
+  resize: none; }
+
+textarea {
+  height: 160px; }
+
+#contactContainer .formField:focus {
+  border-bottom: 2px solid #FFF; }
+
+.formLabel {
+  font-family: 'Roboto Mono', monospace;
+  color: #FFF;
+  margin: 8px 0; }

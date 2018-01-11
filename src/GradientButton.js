@@ -38,7 +38,7 @@ class GradientButton extends Component {
 
   render() {
     return (
-      <Button style={Object.assign(this.style,this.props.style)} text={this.props.text} link={this.props.link}/>
+      <Button style={Object.assign(this.style,this.props.style)} text={this.props.text} link={this.props.link} clickAction={this.props.clickAction}/>
     )
   }
 }
