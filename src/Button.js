@@ -7,7 +7,7 @@ class Button extends Component {
 
   rippleCSS = {
     'box-shadow':'0 2px 5px 0 rgba(0, 0, 0, 0.26)',
-    'transition': 'box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1)',
+    'transition': 'box-shadow 0.15s cubic-bezier(0.4, 0, 0.2, 1)',
     'color': 'grey',
   }
 
@@ -26,7 +26,7 @@ class Button extends Component {
       if(this.props.link) {
         window.open(this.props.link, '_blank')
       }
-    },100)
+    },150)
     
   }
 
