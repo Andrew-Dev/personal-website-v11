@@ -3,6 +3,7 @@ import './ContentArea.css'
 import Introduction from './Introduction'
 import Projects from './Projects'
 import Contact from './Contact'
+import Footer from './Footer'
 import './grid.css'
 
 class ContentArea extends Component {
@@ -13,6 +14,7 @@ class ContentArea extends Component {
                 <Introduction/>
                 <Projects/>
                 <Contact/>
+                <Footer/>
             </div>
         )
     }
