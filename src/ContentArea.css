@@ -24,13 +24,27 @@
   font-family: 'Roboto Slab', serif;
   color: #6441A5;
   font-size: 2em;
-  padding: 10vh 40px; }
+  margin-top: 8vh;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 5vh;
+  text-align: center; }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #introBody {
     font-size: 1.5em;
-    padding: 2vh;
-    text-align: center; } }
+    padding-top: 40px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 5vh; } }
+
+#introduction img {
+  display: block;
+  margin: 0 auto;
+  width: 240px;
+  padding-top: 5vh; }
 
 #introduction {
   background-color: #fff;
