@@ -10,7 +10,7 @@ class IntroArea extends Component {
     }
 
     resume() {
-        window.open('resume.pdf', '_blank')
+        window.open('https://aws.andrewarpasi.com/resume.pdf', '_blank')
     }
 
     render() {
